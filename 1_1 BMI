@@ -8,7 +8,7 @@ public class java01{
         float weight = sc.nextFloat();
         System.out.println("Please enter your height: ");
         float height = sc.nextFloat();
-        System.out.println("Your BMI is " + (weight*weight/height));
+        System.out.println("Your BMI is " + (weight/height*height));
     }
 
 }
