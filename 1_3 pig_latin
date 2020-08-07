@@ -1,0 +1,15 @@
+package com.company;
+import java.util.Scanner;
+
+public class java01{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter your first name: ");
+        String first = sc.nextLine();
+        System.out.println("Please enter your last name: ");
+        String last  = sc.nextLine();
+        String newFirst = first.substring(1,2).toUpperCase() + first.substring(2);
+        String newLast = last.substring(1,2).toUpperCase() + last.substring(2);
+        System.out.println(newFirst + "ay " + newLast + "ay");
+        }
+}
