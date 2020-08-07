@@ -1,0 +1,14 @@
+package com.company;
+import java.util.Scanner;
+
+public class java01{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter your weight: ");
+        float weight = sc.nextFloat();
+        System.out.println("Please enter your height: ");
+        float height = sc.nextFloat();
+        System.out.println("Your BMI is " + (weight*weight/height));
+    }
+
+}
