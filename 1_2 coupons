@@ -1,0 +1,18 @@
+package com.company;
+import java.util.Scanner;
+
+public class java01{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter your number of coupons: ");
+        int coupon = sc.nextInt();
+        int candyBar = coupon / 10;
+        int gumball = (coupon - candyBar * 10) / 3;
+        System.out.println("You have " + candyBar + " candy bars and " + gumball + " gumballs ");
+        int couponLeft = coupon - candyBar * 10 - gumball * 3;
+        if (couponLeft != 0){
+            System.out.println("You still have " + couponLeft + " coupons" );
+        }
+    }
+
+}
